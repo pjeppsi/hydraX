@@ -1,9 +1,7 @@
 const express = require('express')
 const timeout = require('connect-timeout')
 
-const nmap = require("./routes/nmap")
-const cewl = require('./routes/cewl')
-const masscan = require("./routes/masscan")
+const hydra = require("./routes/hydra")
 const sherlock = require("./routes/sherlock")
 const port = 3001
 
@@ -11,9 +9,7 @@ const port = 3001
 const app = express()
 const router = express.Router()
 
-app.use("/nmap", nmap)
-app.use("/cewl", cewl)
-app.use("/masscan", masscan)
+app.use("/hydra", hydra)
 app.use("/sherlock", sherlock)
 
 app.use(timeout(90000))

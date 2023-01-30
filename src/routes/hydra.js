@@ -5,13 +5,13 @@ router.use(express.json())
 
 router.route("/")
     .get((req, res)=>{
-        res.send("Hydra Root hello")
+        res.send("hydraX")
     })
     .post((req, res)=>{
         //fill if needed
     })
 
-router.route("/bruteforce")//za poslat parametre ide samo post
+router.route("/ssh")//za poslat parametre ide samo post
     .get((req, res)=>{
         res.send("")
     })
@@ -19,5 +19,12 @@ router.route("/bruteforce")//za poslat parametre ide samo post
         //fill if needed
     })
 
+    router.route("/form")//za poslat parametre ide samo post
+    .get((req, res)=>{
+        res.send("")
+    })
+    .post((req, res)=>{
+        //fill if needed
+    })
 
 module.exports = router
