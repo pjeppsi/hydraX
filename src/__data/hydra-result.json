@@ -1,0 +1,10 @@
+{ "generator": {
+	"software": "Hydra", "version": "v9.1", "built": "2023-03-03 11:43:21",
+	"server": "161.53.171.105", "service": "ssh", "jsonoutputversion": "1.00",
+	"commandline": "hydra -l pecelar22 -P ./lists/passList.txt -s 10001 -vV -o ./__data/hydra-result.json -b json 161.53.171.105 ssh"
+	},
+"results": [
+	],
+"success": false,
+"errormessages": [ "[ERROR] unexpected result connecting to target 161.53.171.105 port 10001" ],
+"quantityfound": 0   }

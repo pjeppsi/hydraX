@@ -1,24 +1,18 @@
 const express = require('express')
 const timeout = require('connect-timeout')
+// const router = require("./routes/router")
+const router = require("./routes/router2.js")
 
-const hydra = require("./routes/hydra")
-const sherlock = require("./routes/sherlock")
+const sqlConnection = require('./db/db.connect.OG')
 const port = 3001
 
-
 const app = express()
-const router = express.Router()
 
-app.use("/hydra", hydra)
-app.use("/sherlock", sherlock)
-
-app.use(timeout(90000))
-router.use(express.json());
-
+app.use(router)
+app.use(express.urlencoded({extended: 'false'}))
+app.use(express.json())
 app.listen(port, () =>{
-    console.log(`Listening on ${port}`)
+    console.log(`Listening on http://locahost:${port}`)
 })
 
-app.get('/', (req, res)=>{
-    res.send("Root, hello")
-})
+
