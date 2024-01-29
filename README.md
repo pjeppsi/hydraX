@@ -4,5 +4,5 @@
 
 
 
-Brute-force automation service built in NodeJS using Hydra to launch dictionary attack.
+Small Brute-force automation tool built in NodeJS using Hydra to launch dictionary attack against SSH services.
 
