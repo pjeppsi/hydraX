@@ -18,20 +18,4 @@ function executeShellCMD() {
     })
   })
 }
-executeShellCMD()//OVO RADIII cini se asinkrono, ali jos moram izmjerit i testirat nakon deploya!!!!!!!!!!!!!
-// execSh(
-//   ``
-// );
-// exec(`hydra ssh://${targetIP}  -l ${username} -P ${wordlistPath} -s ${targetPORT} -vV -o ./__data/hydra-result-LMAOHAHAH.json -b json`,(error, stdout, stderr)=>{
-//   console.log("Started")
-//   if(error){
-//     console.log(error)
-//     return
-//   }
-//   if(stderr){
-//     console.log(stderr)
-//     return
-//   }
-//   console.log(`stdout: ${stdout}`)
-
-// })
+executeShellCMD()
