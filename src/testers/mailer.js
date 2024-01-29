@@ -12,8 +12,8 @@ var transport = nodemailer.createTransport({
 })
 const stringResults = JSON.stringify(results)
 var mailContent = {
-    from: 'pcelar00@fesb.hr',
-    to: 'petarcelar7@gmail.com',
+    from: '',
+    to: '',
     subject: 'HydraX scan results',
     text: `${stringResults}`,
 }
