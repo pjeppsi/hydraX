@@ -79,7 +79,7 @@ router
               if (isObjEmpty(condition) == false) {
                   var resultFinal = JSON.stringify(condition)
                   var mailContent = {
-                      from: "pcelar00@fesb.hr",
+                      from: "",
                       to: `${email}`,
                       subject: `HydraX scan report for ${username}`,
                       text: `${resultFinal}`,
